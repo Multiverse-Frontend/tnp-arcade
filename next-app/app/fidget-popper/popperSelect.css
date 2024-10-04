@@ -30,6 +30,10 @@
     cursor: pointer;
 }
 
+.popper-options button:hover {
+    transform: scale(1.1);
+}
+
 .default-popper {
     align-content: center;
     height: 35em;

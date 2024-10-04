@@ -78,17 +78,3 @@
     justify-content: center;
     margin: 5px 0;
 }
-
-
-/* Butterfly Styles */
-#butterfly-bubbles {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} 
-
-
-#butterfly-bubbles .bubble-row {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-}

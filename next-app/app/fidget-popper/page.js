@@ -60,7 +60,7 @@ function SelectPopper() {
                     })})}
                 </div>
 
-                <div className="bubbles" id={currentPopper && currentPopper.name === 'butterfly' && 'butterfly-bubbles'} style={{top: currentPopper ? `${currentPopper.top}` : "58%" }}>
+                <div className="bubbles" style={{top: currentPopper ? `${currentPopper.top}` : "58%", left: currentPopper && `${currentPopper.left}` }}>
                     {/* Create bubbles for bubble count value from JSON */}
                     {currentPopper && currentPopper.rowPattern && (() => {
                         const rowPattern = currentPopper.rowPattern;

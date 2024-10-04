@@ -4,7 +4,7 @@
             "name": "sea-turtle",
             "theme": "#008000",
             "bubbleCount": 14,
-            "bubbleSize": "4.5em",
+            "bubbleSize": "4em",
             "rowPattern": [2, 3, 4, 3, 2],
             "top": "65%",
             "left": "50%",
@@ -16,9 +16,9 @@
         "apple": {
             "name": "apple",
             "theme": "#E22400",
-            "bubbleCount": 16,
-            "bubbleSize": "6em",
-            "rowPattern": [4, 5, 4, 3],
+            "bubbleCount": 20,
+            "bubbleSize": "5em",
+            "rowPattern": [5, 6, 5, 4],
             "top": "70%",
             "left": "50%",
             "bubbleColor": "#FE9999",
@@ -26,16 +26,16 @@
         }
     },
     {
-        "butterfly": {
-            "name": "butterfly",
+        "whale": {
+            "name": "whale",
             "theme": "#0056D6",
-            "bubbleCount": 16,
-            "bubbleSize": "4.5em",
-            "rowPattern": [1, 1, 2, 2, 2, 2, 2, 2, 1, 1],
-            "top": "58%",
-            "left": "50%",
+            "bubbleCount": 20,
+            "bubbleSize": "3em",
+            "rowPattern": [4, 5, 6, 5],
+            "top": "70%",
+            "left": "31%",
             "bubbleColor": "#557BE4",
-            "image": "/butterfly-popper.png"
+            "image": "/whale-popper.png"
         }
     }, 
     {
@@ -56,9 +56,9 @@
             "name": "cupcake",
             "theme": "#D357FE",
             "bubbleCount": 18,
-            "bubbleSize": "3.7em",
+            "bubbleSize": "3.5em",
             "rowPattern": [2, 4, 7, 5],
-            "top": "48%",
+            "top": "47%",
             "left": "50%",
             "bubbleColor": "#DBB6E7",
             "image": "/cupcake-popper.png"

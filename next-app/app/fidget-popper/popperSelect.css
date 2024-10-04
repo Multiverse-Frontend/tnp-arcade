@@ -1,0 +1,94 @@
+.main-div {
+    align-content: center;
+    text-align: center;
+    margin: 2em;
+}
+
+.main-div h1 {
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.popper-container {
+    position: relative;
+    display: inline-block;
+}
+
+.popper-options img {
+    height: 7em;
+}
+
+.popper-options {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.popper-options button {
+    background: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.default-popper {
+    align-content: center;
+    height: 35em;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.default-popper img {
+    border: solid white 3px;
+    padding: 1em;
+    display: block;
+    height: 35em;
+    width: 37em;
+}
+
+.bubble {
+    width: 4.5em;
+    height: 4.5em; 
+    border-radius: 3em;
+    margin: 4px; 
+    border: none;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
+}
+
+#select-popper {
+    padding: 1.5em 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--font-press-start-2p);
+    margin-top: 2em;
+}
+
+.bubbles {
+    position: absolute;
+    /* top: 0%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+
+/* Butterfly Styles */
+#butterfly-bubbles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+
+#butterfly-bubbles .bubble-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}

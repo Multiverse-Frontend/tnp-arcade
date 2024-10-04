@@ -1,0 +1,67 @@
+[
+    {
+        "sea-turtle": {
+            "name": "sea-turtle",
+            "theme": "#008000",
+            "bubbleCount": 14,
+            "bubbleSize": "4.5em",
+            "rowPattern": [2, 3, 4, 3, 2],
+            "top": "65%",
+            "left": "50%",
+            "bubbleColor": "#AFF4C6",
+            "image": "/turtle-popper.png"
+        }
+    },
+    {
+        "apple": {
+            "name": "apple",
+            "theme": "#E22400",
+            "bubbleCount": 16,
+            "bubbleSize": "6em",
+            "rowPattern": [4, 5, 4, 3],
+            "top": "70%",
+            "left": "50%",
+            "bubbleColor": "#FE9999",
+            "image": "/apple-popper.png"
+        }
+    },
+    {
+        "butterfly": {
+            "name": "butterfly",
+            "theme": "#0056D6",
+            "bubbleCount": 16,
+            "bubbleSize": "4.5em",
+            "rowPattern": [1, 1, 2, 2, 2, 2, 2, 2, 1, 1],
+            "top": "58%",
+            "left": "50%",
+            "bubbleColor": "#557BE4",
+            "image": "/butterfly-popper.png"
+        }
+    }, 
+    {
+        "sunflower": {
+            "name": "sunflower",
+            "theme": "#E3A333",
+            "bubbleCount": 12,
+            "bubbleSize": "2.5em",
+            "rowPattern": [2, 4, 4, 2],
+            "top": "50%",
+            "left": "50%",
+            "bubbleColor": "#FFCD29",
+            "image": "/sunflower-popper.png"
+        }
+    },
+    {
+        "cupcake": {
+            "name": "cupcake",
+            "theme": "#D357FE",
+            "bubbleCount": 18,
+            "bubbleSize": "3.7em",
+            "rowPattern": [2, 4, 7, 5],
+            "top": "48%",
+            "left": "50%",
+            "bubbleColor": "#DBB6E7",
+            "image": "/cupcake-popper.png"
+        }
+    }
+]

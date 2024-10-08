@@ -1,8 +1,10 @@
 // TNP-ARCADE/app/page.js
 "use client"; // Add this line to indicate a client component
 
+
 import React, { useState } from 'react';
 import MemoryGamePage from './memoryGame/page';
+import styles from "./page.module.css";
 
 const HomePage = () => {
   const [showMemoryGame, setShowMemoryGame] = useState(false);

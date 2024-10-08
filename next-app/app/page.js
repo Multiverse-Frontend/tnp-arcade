@@ -1,15 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from 'next/navigation';
 
-import SelectPopper from "./fidget-popper/page";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <h1>TNP Arcade</h1>
       <p>Choose a game!</p>
 
-      <SelectPopper />
+      <button onClick={() => router.push('/fidget-popper')}>Fidget Popper</button>
+      
     </>
   );
 }

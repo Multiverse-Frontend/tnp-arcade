@@ -1,11 +1,24 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// TNP-ARCADE/app/page.js
+"use client"; // Add this line to indicate a client component
 
-export default function Home() {
+import React, { useState } from 'react';
+import MemoryGamePage from './memoryGame/page';
+
+const HomePage = () => {
+  const [showMemoryGame, setShowMemoryGame] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowMemoryGame(true);
+  };
+
   return (
-    <>
-      <h1>TNP Arcade</h1>
+    <div>
+      <h1>Welcome to TNP Arcade</h1>
       <p>Choose a game!</p>
-    </>
+      <button onClick={handleButtonClick}>Play Memory Game</button>
+      {showMemoryGame && <MemoryGamePage />}
+    </div>
   );
-}
+};
+
+export default HomePage;

@@ -1,3 +1,12 @@
+#back-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-family: var(--font-press-start-2p);
+    margin-left: 2em;
+    font-size: 13pt;
+}
+
 .main-div {
     align-content: center;
     text-align: center;
@@ -29,6 +38,7 @@
     background: none;
     padding: 1em;
     cursor: pointer;
+    border-radius: var(--border-radius);
 }
 
 .popper-options button:hover {
@@ -36,18 +46,20 @@
 }
 
 .default-popper {
+    display: flex;
+    justify-content: center;
     align-content: center;
     height: 35em;
-    padding: 2em;
-    margin-bottom: 1em;
+    padding: 2em 2em 0 2em;
 }
 
 .default-popper img {
     border: solid white 3px;
     padding: 1em;
     display: block;
-    height: 35em;
-    width: 37em;
+    height: 30em;
+    width: 32em;
+    border-radius: var(--border-radius);
 }
 
 .bubble {
@@ -65,7 +77,12 @@
     text-transform: uppercase;
     font-weight: bold;
     font-family: var(--font-press-start-2p);
-    margin-top: 2em;
+    border-radius: var(--border-radius);
+}
+
+#select-popper:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .bubbles {

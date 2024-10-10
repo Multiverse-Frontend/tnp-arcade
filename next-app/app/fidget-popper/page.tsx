@@ -11,7 +11,7 @@ function FidgetPopper() {
     
     return (
         <GameProvider>
-            <h1 style={{textTransform: 'uppercase', margin: '2em', textAlign: 'center'}}>Fidget Popper</h1>
+            <h1 style={{textTransform: 'uppercase', margin: '2em 2em 0 2em', textAlign: 'center'}}>Fidget Popper</h1>
 
             {selectView && (
                 <SelectPopper selectView={selectView} setSelectView={setSelectView} setPlayView={setPlayView} />                

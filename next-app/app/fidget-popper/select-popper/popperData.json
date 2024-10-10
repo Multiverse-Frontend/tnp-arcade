@@ -6,8 +6,8 @@
             "bubbleCount": 14,
             "bubbleSize": "5em",
             "rowPattern": [2, 3, 4, 3, 2],
-            "top": "55%",
-            "left": "34%",
+            "top": "60%",
+            "left": "35%",
             "bubbleColor": "#AFF4C6",
             "image": "/turtle-popper.png"
         }
@@ -19,8 +19,8 @@
             "bubbleCount": 20,
             "bubbleSize": "6em",
             "rowPattern": [5, 6, 5, 4],
-            "top": "58%",
-            "left": "34%",
+            "top": "65%",
+            "left": "35%",
             "bubbleColor": "#FE9999",
             "image": "/apple-popper.png"
         }
@@ -32,8 +32,8 @@
             "bubbleCount": 20,
             "bubbleSize": "4em",
             "rowPattern": [4, 5, 6, 5],
-            "top": "58%",
-            "left": "27%",
+            "top": "65%",
+            "left": "26%",
             "bubbleColor": "#557BE4",
             "image": "/whale-popper.png"
         }
@@ -45,7 +45,7 @@
             "bubbleCount": 12,
             "bubbleSize": "3em",
             "rowPattern": [2, 4, 4, 2],
-            "top": "42%",
+            "top": "45%",
             "left": "35%",
             "bubbleColor": "#FFCD29",
             "image": "/sunflower-popper.png"
@@ -58,7 +58,7 @@
             "bubbleCount": 18,
             "bubbleSize": "4.5em",
             "rowPattern": [2, 4, 7, 5],
-            "top": "40%",
+            "top": "43%",
             "left": "35%",
             "bubbleColor": "#DBB6E7",
             "image": "/cupcake-popper.png"

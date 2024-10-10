@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { ArrowBackOutline } from 'react-ionicons'
 import React, { useContext, useEffect, useState } from "react";
 import { GameContext } from "../GameContext";
 import { useRouter } from "next/navigation";
@@ -55,7 +56,7 @@ function SelectPopper({ selectView, setSelectView, setPlayView }: SelectPopperPr
     if (currentPopper) {
         setSelectView(false);
         setPlayView(true);
-    //   router.push("/fidget-popper/play-game");
+      // router.push("/fidget-popper/play-game");
     } else {
       const errorMessage = document.getElementById("error-message");
       errorMessage.innerHTML = "Please select a popper";
@@ -64,8 +65,16 @@ function SelectPopper({ selectView, setSelectView, setPlayView }: SelectPopperPr
   }
 
   return (
+    <>
+    <button id="back-btn" onClick={() => router.push("./")}>
+      <ArrowBackOutline
+      color={'#ffffff'} 
+      height="35px"
+      width="35px"
+      />
+    </button>
+
     <div className="main-div">
-      <button onClick={() => router.push("./")}>Back</button>
 
       <div className="popper-container">
 
@@ -113,6 +122,7 @@ function SelectPopper({ selectView, setSelectView, setPlayView }: SelectPopperPr
         <div id="error-message"></div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,34 +1,11 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-
-const drawingPrompts = [
-  "A cat wearing sunglasses",
-  "A robot having a picnic",
-  "A flying car",
-  "A tree house in space",
-  "A penguin surfing",
-  "A dragon reading a book",
-  "A time machine shaped like a teapot",
-  "A superhero eating ice cream",
-  "A mermaid playing basketball",
-  "A unicorn in a business suit",
-  "A giraffe riding a motorcycle",
-  "A fox painting a mural in a forest",
-  "An octopus chef cooking in a kitchen",
-  "A hamster astronaut floating in zero gravity",
-  "A snail delivering letters on a skateboard",
-  "A dinosaur playing chess with a squirrel",
-  "A hedgehog gardening in a flower shop",
-  "A lion DJing at a rooftop party",
-  "A fairy with a jetpack exploring a city",
-  "A walrus playing the piano on a beach",
-  "A chameleon blending into a rainbow",
-];
-
-const timeLimitOptions = [5, 30, 45, 60, 90];
+import Modal from "../components/Modal";
+import { drawingPrompts, timeLimitOptions } from "./data";
 
 export default function QuickDrawPlay() {
+  //states
   const [timeLimit, setTimeLimit] = useState(30);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentPrompt, setCurrentPrompt] = useState("");
@@ -281,20 +258,22 @@ export default function QuickDrawPlay() {
           >
             Clear Canvas
           </button>
-          <div className="flex gap-2">
-            <button
-              className="bg-pink-300 hover:bg-pink-400 text-white font-bold py-2 px-5 rounded"
-              onClick={endTurn}
-            >
-              End Turn
-            </button>
-            <button
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 rounded"
-              onClick={endGame}
-            >
-              End Game
-            </button>
-          </div>
+          {isPlaying && (
+            <div className="flex gap-2">
+              <button
+                className="bg-pink-300 hover:bg-pink-400 text-white font-bold py-2 px-5 rounded"
+                onClick={endTurn}
+              >
+                End Turn
+              </button>
+              <button
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-5 rounded"
+                onClick={endGame}
+              >
+                End Game
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="mt-4 flex justify-center gap-5 text-xl font-semibold text-white">
@@ -304,59 +283,15 @@ export default function QuickDrawPlay() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-[#2a0e20] p-6 rounded-lg max-w-md w-full">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold text-pink-500">
-                {modalType === "rate" ? "Rate the Drawing" : "Game Over"}
-              </h2>
-              <button
-                onClick={() => setShowModal(false)}
-                className="text-gray-300 hover:text-white"
-              >
-                &#x2715;
-              </button>
-            </div>
-            {modalType === "rate" ? (
-              <div className="text-center space-y-4">
-                <p className="text-lg text-white">
-                  Rate Player {currentPlayer}'s drawing:
-                </p>
-                <div className="flex justify-center space-x-2">
-                  {[1, 2, 3, 4, 5].map((rating) => (
-                    <button
-                      key={rating}
-                      onClick={() => rateDrawing(rating)}
-                      className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    >
-                      {rating}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <div className="text-center space-y-4">
-                <p className="text-lg text-white">Final Scores:</p>
-                <p className="text-white">Player 1: {player1Score}</p>
-                <p className="text-white">Player 2: {player2Score}</p>
-                <p className="text-xl font-bold text-pink-500">
-                  Winner:{" "}
-                  {player1Score > player2Score
-                    ? "Player 1"
-                    : player1Score < player2Score
-                    ? "Player 2"
-                    : "It's a tie!"}
-                </p>
-                <button
-                  onClick={resetGame}
-                  className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                >
-                  New Game
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
+        <Modal
+          modalType={modalType}
+          setShowModal={setShowModal}
+          currentPlayer={currentPlayer}
+          rateDrawing={rateDrawing}
+          player1Score={player1Score}
+          player2Score={player2Score}
+          resetGame={resetGame}
+        />
       )}
     </div>
   );

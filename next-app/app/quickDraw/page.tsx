@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import QuickDrawPlay from "./play/page";
 
-const quickDrawGame = () => {
+const QuickDrawStart = () => {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="border-2 border-pink-500 p-16 rounded-lg shadow-md">
+      <div className="border-2 bg-[#2a0e20] border-pink-500 p-16 rounded-lg shadow-md">
         <h2 className="text-3xl text-pink-500 text-center">Quick Draw</h2>
         <Link
           href="/quickDraw/play"
@@ -17,4 +18,4 @@ const quickDrawGame = () => {
   );
 };
 
-export default quickDrawGame;
+export default QuickDrawStart;

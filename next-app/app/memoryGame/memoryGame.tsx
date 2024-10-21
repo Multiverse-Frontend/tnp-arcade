@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import "../app/globals.css";
+import "../globals.css";
 
 const symbols = ['☆', '♠', '♥', '♦', '♣', '♫', '☺', '☼']
 
@@ -52,7 +52,7 @@ const colorSchemes: ColorScheme[] = [
   },
 ]
 
-export default function Component() {
+const MemoryGame = () =>{
   const [cards, setCards] = useState<Card[]>([])
   const [flippedCards, setFlippedCards] = useState<number[]>([])
   const [matches, setMatches] = useState(0)
@@ -160,3 +160,4 @@ export default function Component() {
     </div>
   )
 }
+export default MemoryGame;

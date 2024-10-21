@@ -8,7 +8,7 @@ export default function Home() {
       <h1>TNP Arcade</h1>
       <p>Choose a game!</p>
       <div className={styles.buttonContainer}>
-        <Link href="/memory-game" className={styles.button}>
+        <Link href="/memoryGame" className={styles.button}>
           Memory Game
         </Link>
         <Link href="/another-game" className={styles.button}>

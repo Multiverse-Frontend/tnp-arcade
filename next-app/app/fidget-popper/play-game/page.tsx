@@ -79,7 +79,6 @@ const PlayGame: React.FC<PlayGameProps> = ({ setSelectView, setPlayView }) => {
         });
 
         setScore((prevScore) => prevScore + 10);
-        (bubble as HTMLElement).style.backgroundColor = 'grey';
     }
 
 

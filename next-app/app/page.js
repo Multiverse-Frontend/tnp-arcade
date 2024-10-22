@@ -12,7 +12,7 @@ export default function Home() {
   const [currentGame, setCurrentGame] = useState(gameImages[1]);
   const [gameIndex, setGameIndex] = useState(0);
 
-  function toggleGames() {
+  function toggleGamesRightBtn() {
     // Increment the game index each click
     let newIndex = gameIndex + 1;
 
@@ -20,8 +20,18 @@ export default function Home() {
     if (newIndex >= gameImages.length) {
       newIndex = 0;
     }
+    setCurrentGame(gameImages[newIndex]);
+    setGameIndex(newIndex);
+  }
 
-    console.log(gameImages[newIndex]);
+  function toggleGamesLeftBtn() {
+    // Decrement the game index each click
+    let newIndex = gameIndex - 1;
+
+    // Reset the game index to the last index if it goes below 0
+    if (newIndex < 0) {
+      newIndex = gameImages.length - 1;
+    }
     setCurrentGame(gameImages[newIndex]);
     setGameIndex(newIndex);
   }
@@ -30,9 +40,9 @@ export default function Home() {
     if (currentGame.name === "fidget-popper") {
       router.push('/fidget-popper');
     } else if (currentGame.name === "memory-game") {
-      router.push('/memory-game');
+      router.push('/'); // Change to correct route
     } else if (currentGame.name === "quick-draw") {
-      router.push('/quick-draw');
+      router.push('/'); // Change to correct route
     }
   }
 
@@ -42,7 +52,7 @@ export default function Home() {
       <p>Choose a game!</p><br/>
 
       <div style={{display: 'flex', justifyContent: 'center'}}>
-      <button className="nav-arrows" onClick={() => toggleGames()}>
+      <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
       <ArrowBackOutline
             color={'#ffffff'} 
             height="55px"
@@ -52,7 +62,7 @@ export default function Home() {
         <div id="machine-img-div">
             <Image src={currentGame.imageURL} alt="Arcade Machine" width={800} height={850}/>
         </div>
-        <button className="nav-arrows" onClick={() => toggleGames()}>
+        <button className="nav-arrows" onClick={() => toggleGamesRightBtn()}>
           <ArrowForwardOutline
             color={'#ffffff'} 
             height="55px"

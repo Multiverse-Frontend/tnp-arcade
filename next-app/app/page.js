@@ -48,7 +48,7 @@ export default function Home() {
 
   return (
     <div id="home-page">
-      <h1>TNP Arcade</h1>
+      <h1 style={{ fontSize: '2em' }}>TNP Arcade</h1>
       <p>Choose a game!</p>
       <br />
 
@@ -68,7 +68,7 @@ export default function Home() {
           <ArrowForwardOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
       </div>
-      <button className="bg-white text-black" onClick={() => routeGames()}>
+      <button id="play-game" className="bg-white text-black" onClick={() => routeGames()}>
         PLAY GAME
       </button>
     </div>

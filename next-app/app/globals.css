@@ -45,7 +45,7 @@ body {
   margin-bottom: 2em;
 }
 
-#home-page button {
+#play-game {
   width: 20em;
   padding: 1.5em 3em;
   border-radius: var(--border-radius);

@@ -1,0 +1,14 @@
+[
+    {
+            "name": "fidget-popper",
+            "imageURL": "/fidget-popper-arcade.png"
+    },
+    {       
+            "name": "memory-game",
+            "imageURL": "/memory-game-arcade.png"
+    },
+    {       
+            "name": "quick-draw",
+            "imageURL": "/quick-draw-arcade.png"
+    }
+]

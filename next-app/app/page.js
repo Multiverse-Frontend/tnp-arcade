@@ -68,7 +68,9 @@ export default function Home() {
           <ArrowForwardOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
       </div>
-      <button onClick={() => routeGames()}>PLAY GAME</button>
+      <button className="bg-white text-black" onClick={() => routeGames()}>
+        PLAY GAME
+      </button>
     </div>
   );
 }

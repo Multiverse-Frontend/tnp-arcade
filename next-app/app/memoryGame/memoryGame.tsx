@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import "../globals.css";
+import { ArrowBackOutline } from 'react-ionicons';
+import Link from 'next/link';
 
 const symbols = ['☆', '♠', '♥', '♦', '♣', '♫', '☺', '☼']
 
@@ -119,6 +121,11 @@ const MemoryGame = () =>{
 
   return (
     <div className={`flex flex-col items-center justify-center min-h-screen ${colorScheme.background} ${colorScheme.text} font-mono`}>
+      <div className="flex justify-start items-start w-full max-w-4xl mb-4">
+      <Link href="/">
+        <ArrowBackOutline color={"#ffffff"} height="35px" width="35px" />
+      </Link>
+    </div>
       <h1 className="text-4xl mb-8 tracking-wide">Memory Game</h1>
       <div className="mb-4">
         <span className="mr-4">Moves: {moves}</span>

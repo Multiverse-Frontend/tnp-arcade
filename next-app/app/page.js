@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import "./page.module.css";
-import { useRouter } from 'next/navigation';
-import { ArrowBackOutline, ArrowForwardOutline } from 'react-ionicons';
-import gameImages from "./arcadeImages.json"; 
+import { useRouter } from "next/navigation";
+import { ArrowBackOutline, ArrowForwardOutline } from "react-ionicons";
+import gameImages from "./arcadeImages.json";
 
 export default function Home() {
   const router = useRouter();
@@ -38,11 +38,11 @@ export default function Home() {
 
   function routeGames() {
     if (currentGame.name === "fidget-popper") {
-      router.push('/fidgetPopper');
+      router.push("/fidgetPopper");
     } else if (currentGame.name === "memory-game") {
-      router.push('/'); // Change to correct route
+      router.push("/memoryGame"); // Change to correct route
     } else if (currentGame.name === "quick-draw") {
-      router.push('/'); // Change to correct route
+      router.push("/quickDraw");
     }
   }
 
@@ -52,13 +52,9 @@ export default function Home() {
       <p>Choose a game!</p>
       <br />
 
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-      <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
-      <ArrowBackOutline
-            color={'#ffffff'} 
-            height="55px"
-            width="55px"
-          />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
+          <ArrowBackOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
         <div id="machine-img-div">
           <Image
@@ -69,11 +65,7 @@ export default function Home() {
           />
         </div>
         <button className="nav-arrows" onClick={() => toggleGamesRightBtn()}>
-          <ArrowForwardOutline
-            color={'#ffffff'} 
-            height="55px"
-            width="55px"
-          />
+          <ArrowForwardOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
       </div>
       <button id="play-game" className="bg-white text-black" onClick={() => routeGames()}>

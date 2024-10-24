@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import "./page.module.css";
-import { useRouter } from 'next/navigation';
-import { ArrowBackOutline, ArrowForwardOutline } from 'react-ionicons';
-import gameImages from "./arcadeImages.json"; 
+import { useRouter } from "next/navigation";
+import { ArrowBackOutline, ArrowForwardOutline } from "react-ionicons";
+import gameImages from "./arcadeImages.json";
 
 export default function Home() {
   const router = useRouter();
@@ -38,36 +38,34 @@ export default function Home() {
 
   function routeGames() {
     if (currentGame.name === "fidget-popper") {
-      router.push('/fidgetPopper');
+      router.push("/fidgetPopper");
     } else if (currentGame.name === "memory-game") {
-      router.push('/'); // Change to correct route
+      router.push("/"); // Change to correct route
     } else if (currentGame.name === "quick-draw") {
-      router.push('/'); // Change to correct route
+      router.push("/quickDraw");
     }
   }
 
   return (
     <div id="home-page">
       <h1>TNP Arcade</h1>
-      <p>Choose a game!</p><br/>
+      <p>Choose a game!</p>
+      <br />
 
-      <div style={{display: 'flex', justifyContent: 'center'}}>
-      <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
-      <ArrowBackOutline
-            color={'#ffffff'} 
-            height="55px"
-            width="55px"
-          />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
+          <ArrowBackOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
         <div id="machine-img-div">
-            <Image src={currentGame.imageURL} alt="Arcade Machine" width={800} height={850}/>
+          <Image
+            src={currentGame.imageURL}
+            alt="Arcade Machine"
+            width={800}
+            height={850}
+          />
         </div>
         <button className="nav-arrows" onClick={() => toggleGamesRightBtn()}>
-          <ArrowForwardOutline
-            color={'#ffffff'} 
-            height="55px"
-            width="55px"
-          />
+          <ArrowForwardOutline color={"#ffffff"} height="55px" width="55px" />
         </button>
       </div>
       <button onClick={() => routeGames()}>PLAY GAME</button>

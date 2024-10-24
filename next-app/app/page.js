@@ -40,7 +40,7 @@ export default function Home() {
     if (currentGame.name === "fidget-popper") {
       router.push("/fidgetPopper");
     } else if (currentGame.name === "memory-game") {
-      router.push("/"); // Change to correct route
+      router.push("/memoryGame"); // Change to correct route
     } else if (currentGame.name === "quick-draw") {
       router.push("/quickDraw");
     }

@@ -38,7 +38,7 @@ export default function Home() {
 
   function routeGames() {
     if (currentGame.name === "fidget-popper") {
-      router.push('/fidget-popper');
+      router.push('/fidgetPopper');
     } else if (currentGame.name === "memory-game") {
       router.push('/'); // Change to correct route
     } else if (currentGame.name === "quick-draw") {

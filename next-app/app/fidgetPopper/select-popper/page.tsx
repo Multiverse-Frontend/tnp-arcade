@@ -118,7 +118,7 @@ function SelectPopper({ selectView, setSelectView, setPlayView }: SelectPopperPr
       </div>
 
       <div>
-        <button id="select-popper" className="btn btn-warning" onClick={handleSelectClick}>Select</button>
+        <button id="select-popper" className="bg-white text-black" onClick={handleSelectClick}>Select</button>
         <div id="error-message"></div>
       </div>
     </div>

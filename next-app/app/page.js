@@ -48,8 +48,9 @@ export default function Home() {
 
   return (
     <div id="home-page">
-      <h1>TNP Arcade</h1>
-      <p>Choose a game!</p><br/>
+      <h1 style={{ fontSize: '2em' }}>TNP Arcade</h1>
+      <p>Choose a game!</p>
+      <br />
 
       <div style={{display: 'flex', justifyContent: 'center'}}>
       <button className="nav-arrows" onClick={() => toggleGamesLeftBtn()}>
@@ -60,7 +61,12 @@ export default function Home() {
           />
         </button>
         <div id="machine-img-div">
-            <Image src={currentGame.imageURL} alt="Arcade Machine" width={800} height={850}/>
+          <Image
+            src={currentGame.imageURL}
+            alt="Arcade Machine"
+            width={700}
+            height={650}
+          />
         </div>
         <button className="nav-arrows" onClick={() => toggleGamesRightBtn()}>
           <ArrowForwardOutline
@@ -70,7 +76,9 @@ export default function Home() {
           />
         </button>
       </div>
-      <button onClick={() => routeGames()}>PLAY GAME</button>
+      <button id="play-game" className="bg-white text-black" onClick={() => routeGames()}>
+        PLAY GAME
+      </button>
     </div>
   );
 }

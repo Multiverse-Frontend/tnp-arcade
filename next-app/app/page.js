@@ -64,8 +64,8 @@ export default function Home() {
           <Image
             src={currentGame.imageURL}
             alt="Arcade Machine"
-            width={700}
-            height={650}
+            width={800}
+            height={850}
           />
         </div>
         <button className="nav-arrows" onClick={() => toggleGamesRightBtn()}>

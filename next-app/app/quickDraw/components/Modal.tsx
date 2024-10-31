@@ -27,7 +27,7 @@ const Modal: React.FC<AppProps> = ({
             onClick={() => setShowModal(false)}
             className="text-gray-300 hover:text-white"
           >
-            &#x2715;
+            &times;
           </button>
         </div>
         <h2 className="text-2xl text-center font-bold text-pink-500 mb-6">

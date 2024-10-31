@@ -6,7 +6,7 @@
             "bubbleCount": 14,
             "bubbleSize": "5em",
             "rowPattern": [2, 3, 4, 3, 2],
-            "top": "60%",
+            "top": "62%",
             "left": "35%",
             "bubbleColor": "#AFF4C6",
             "image": "/turtle-popper.png"
@@ -30,9 +30,9 @@
             "name": "whale",
             "theme": "#0056D6",
             "bubbleCount": 20,
-            "bubbleSize": "4em",
+            "bubbleSize": "3.5em",
             "rowPattern": [4, 5, 6, 5],
-            "top": "65%",
+            "top": "67%",
             "left": "26%",
             "bubbleColor": "#557BE4",
             "image": "/whale-popper.png"
@@ -45,7 +45,7 @@
             "bubbleCount": 12,
             "bubbleSize": "3em",
             "rowPattern": [2, 4, 4, 2],
-            "top": "45%",
+            "top": "47%",
             "left": "35%",
             "bubbleColor": "#FFCD29",
             "image": "/sunflower-popper.png"
@@ -56,9 +56,9 @@
             "name": "cupcake",
             "theme": "#D357FE",
             "bubbleCount": 18,
-            "bubbleSize": "4.5em",
+            "bubbleSize": "4em",
             "rowPattern": [2, 4, 7, 5],
-            "top": "43%",
+            "top": "44%",
             "left": "35%",
             "bubbleColor": "#DBB6E7",
             "image": "/cupcake-popper.png"

@@ -1,4 +1,4 @@
-# tnp-arcade
+# TNP Arcade
 TNP is your go to vintage themed arcade, bringing a nostalgic gaming experience.
 ![dashboard](./next-app/public/dashboard-screenshot.png)
 
